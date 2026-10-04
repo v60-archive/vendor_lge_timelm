@@ -6,16 +6,22 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/lge/timelm
 
 PRODUCT_COPY_FILES += \
+    vendor/lge/timelm/proprietary/product/etc/permissions/com.lge.cinemagraph.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.lge.cinemagraph.xml \
+    vendor/lge/timelm/proprietary/product/etc/permissions/privapp-permissions-lg-camera.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-lg-camera.xml \
     vendor/lge/timelm/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/camera_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/camera_config.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.lge.camerasolution.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.lge.camerasolution.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/solution_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/solution_config.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/sysconfig/lge_camera_hiddenapi_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/lge_camera_hiddenapi_whitelist.xml \
     vendor/lge/timelm/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/lge/timelm/proprietary/vendor/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/General_cal.acdb \
     vendor/lge/timelm/proprietary/vendor/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Global_cal.acdb \
@@ -29,6 +35,265 @@ PRODUCT_COPY_FILES += \
     vendor/lge/timelm/proprietary/vendor/etc/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
     vendor/lge/timelm/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     vendor/lge/timelm/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/auxpackagelist.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/auxpackagelist.txt \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/10_cine-max.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/10_cine-max.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/10_cine-min.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/10_cine-min.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/10_cine_10.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/10_cine_10.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/10_vignette.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/10_vignette.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/11_cine-max.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/11_cine-max.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/11_cine-min.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/11_cine-min.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/11_cine_10.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/11_cine_10.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/11_vignette.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/11_vignette.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/12_cine-max.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/12_cine-max.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/12_cine-min.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/12_cine-min.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/12_cine_10.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/12_cine_10.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/13_cine-max.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/13_cine-max.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/13_cine-min.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/13_cine-min.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/13_cine_10.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/13_cine_10.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/14_cine-max.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/14_cine-max.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/14_cine-min.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/14_cine-min.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/14_cine_10.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/14_cine_10.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/15_cine-max.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/15_cine-max.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/15_cine-min.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/15_cine-min.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/15_cine_10.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/15_cine_10.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/16_cine-max.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/16_cine-max.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/16_cine-min.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/16_cine-min.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/16_cine_10.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/16_cine_10.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/17_cine_10.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/17_cine_10.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/18_cine_10.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/18_cine_10.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/19_cine_10.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/19_cine_10.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/1_cine-max.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/1_cine-max.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/1_cine-min.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/1_cine-min.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/1_cine_10.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/1_cine_10.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/1_vignette.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/1_vignette.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/20_cine_10.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/20_cine_10.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/21_cine_10.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/21_cine_10.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/2_cine-max.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/2_cine-max.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/2_cine-min.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/2_cine-min.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/2_cine_10.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/2_cine_10.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/2_vignette.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/2_vignette.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/3_cine-max.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/3_cine-max.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/3_cine-min.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/3_cine-min.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/3_cine_10.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/3_cine_10.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/3_vignette.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/3_vignette.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/4_cine-max.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/4_cine-max.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/4_cine-min.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/4_cine-min.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/4_cine_10.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/4_cine_10.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/4_vignette.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/4_vignette.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/5_cine-max.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/5_cine-max.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/5_cine-min.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/5_cine-min.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/5_cine_10.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/5_cine_10.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/5_vignette.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/5_vignette.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/6_cine-max.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/6_cine-max.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/6_cine-min.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/6_cine-min.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/6_cine_10.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/6_cine_10.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/6_vignette.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/6_vignette.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/7_cine-max.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/7_cine-max.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/7_cine-min.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/7_cine-min.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/7_cine_10.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/7_cine_10.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/7_vignette.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/7_vignette.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/8_cine-max.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/8_cine-max.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/8_cine-min.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/8_cine-min.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/8_cine_10.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/8_cine_10.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/8_vignette.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/8_vignette.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/9_cine-max.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/9_cine-max.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/9_cine-min.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/9_cine-min.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/9_cine_10.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/9_cine_10.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/9_vignette.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/9_vignette.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/cinema/cine_min_10.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cinema/cine_min_10.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/film/0_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/0_film.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/film/10_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/10_film.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/film/1_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/1_film.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/film/2_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/2_film.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/film/3_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/3_film.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/film/4_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/4_film.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/film/5_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/5_film.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/film/6_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/6_film.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/film/7_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/7_film.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/film/8_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/8_film.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/film/9_film.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/film/9_film.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/food/1_food.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/food/1_food.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/iqm/ai_checker_graph.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/iqm/ai_checker_graph.dlc \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/iqm/fc4_awb.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/iqm/fc4_awb.dlc \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/iqm/gender_detection_graph.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/iqm/gender_detection_graph.dlc \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/capture/Grooming_c.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/capture/Grooming_c.cng \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/capture/Idol_c.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/capture/Idol_c.cng \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/capture/Iu_c.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/capture/Iu_c.cng \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/capture/Japanese_c.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/capture/Japanese_c.cng \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/capture/Luxury_eye_c.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/capture/Luxury_eye_c.cng \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/capture/Luxury_lip_c.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/capture/Luxury_lip_c.cng \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/capture/Natural_c.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/capture/Natural_c.cng \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/capture/Rose_c.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/capture/Rose_c.cng \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/capture/Teen_c.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/capture/Teen_c.cng \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/capture/Wedding_c.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/capture/Wedding_c.cng \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/preview/Grooming_p.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/preview/Grooming_p.cng \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/preview/Idol_p.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/preview/Idol_p.cng \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/preview/Iu_p.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/preview/Iu_p.cng \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/preview/Japanese_p.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/preview/Japanese_p.cng \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/preview/Luxury_eye_p.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/preview/Luxury_eye_p.cng \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/preview/Luxury_lip_p.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/preview/Luxury_lip_p.cng \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/preview/Natural_p.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/preview/Natural_p.cng \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/preview/Rose_p.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/preview/Rose_p.cng \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/preview/Teen_p.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/preview/Teen_p.cng \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/preview/Wedding_p.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/preview/Wedding_p.cng \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/shadowlight/LG_10_grooming_h_325x400.BGR32:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/shadowlight/LG_10_grooming_h_325x400.BGR32 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/shadowlight/LG_10_grooming_s_325x400.BGR32:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/shadowlight/LG_10_grooming_s_325x400.BGR32 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/shadowlight/LG_1_natural_h_325x400.BGR32:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/shadowlight/LG_1_natural_h_325x400.BGR32 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/shadowlight/LG_1_natural_s_325x400.BGR32:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/shadowlight/LG_1_natural_s_325x400.BGR32 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/shadowlight/LG_2_rose_h_325x400.BGR32:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/shadowlight/LG_2_rose_h_325x400.BGR32 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/shadowlight/LG_2_rose_s_325x400.BGR32:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/shadowlight/LG_2_rose_s_325x400.BGR32 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/shadowlight/LG_3_luxury_eyes_h_325x400.BGR32:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/shadowlight/LG_3_luxury_eyes_h_325x400.BGR32 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/shadowlight/LG_3_luxury_eyes_s_325x400.BGR32:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/shadowlight/LG_3_luxury_eyes_s_325x400.BGR32 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/shadowlight/LG_4_teen_h_325x400.BGR32:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/shadowlight/LG_4_teen_h_325x400.BGR32 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/shadowlight/LG_4_teen_s_325x400.BGR32:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/shadowlight/LG_4_teen_s_325x400.BGR32 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/shadowlight/LG_5_luxury_lip_h_325x400.BGR32:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/shadowlight/LG_5_luxury_lip_h_325x400.BGR32 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/shadowlight/LG_5_luxury_lip_s_325x400.BGR32:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/shadowlight/LG_5_luxury_lip_s_325x400.BGR32 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/shadowlight/LG_6_idol_h_325x400.BGR32:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/shadowlight/LG_6_idol_h_325x400.BGR32 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/shadowlight/LG_6_idol_s_325x400.BGR32:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/shadowlight/LG_6_idol_s_325x400.BGR32 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/shadowlight/LG_7_wedding_h_325x400.BGR32:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/shadowlight/LG_7_wedding_h_325x400.BGR32 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/shadowlight/LG_7_wedding_s_325x400.BGR32:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/shadowlight/LG_7_wedding_s_325x400.BGR32 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/shadowlight/LG_8_iu_h_325x400.BGR32:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/shadowlight/LG_8_iu_h_325x400.BGR32 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/shadowlight/LG_8_iu_s_325x400.BGR32:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/shadowlight/LG_8_iu_s_325x400.BGR32 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/shadowlight/LG_9_japanese_h_325x400.BGR32:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/shadowlight/LG_9_japanese_h_325x400.BGR32 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/makeup/shadowlight/LG_9_japanese_s_325x400.BGR32:$(TARGET_COPY_OUT_VENDOR)/etc/camera/makeup/shadowlight/LG_9_japanese_s_325x400.BGR32 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/outfocus/deepportrait_snapshot.dlce:$(TARGET_COPY_OUT_VENDOR)/etc/camera/outfocus/deepportrait_snapshot.dlce \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/pie/classification_1836_1836.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pie/classification_1836_1836.dlc \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/pie/classification_2848_1252.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pie/classification_2848_1252.dlc \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/pie/classification_2848_1602.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pie/classification_2848_1602.dlc \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/pie/classification_2848_2136.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pie/classification_2848_2136.dlc \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/pie/classification_3468_3468.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pie/classification_3468_3468.dlc \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/pie/classification_4624_2032.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pie/classification_4624_2032.dlc \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/pie/classification_4624_2600.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pie/classification_4624_2600.dlc \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/pie/classification_4624_3468.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pie/classification_4624_3468.dlc \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/pie/deflicker_capture_rgb_1836x1836.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pie/deflicker_capture_rgb_1836x1836.dlc \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/pie/deflicker_capture_rgb_2848x1252.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pie/deflicker_capture_rgb_2848x1252.dlc \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/pie/deflicker_capture_rgb_2848x1602.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pie/deflicker_capture_rgb_2848x1602.dlc \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/pie/deflicker_capture_rgb_2848x2136.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pie/deflicker_capture_rgb_2848x2136.dlc \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/pie/deflicker_capture_rgb_3468x3468.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pie/deflicker_capture_rgb_3468x3468.dlc \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/pie/deflicker_capture_rgb_4624x2032.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pie/deflicker_capture_rgb_4624x2032.dlc \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/pie/deflicker_capture_rgb_4624x2600.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pie/deflicker_capture_rgb_4624x2600.dlc \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/pie/deflicker_capture_rgb_4624x3468.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pie/deflicker_capture_rgb_4624x3468.dlc \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/portraitlight/Back_filter.NV21:$(TARGET_COPY_OUT_VENDOR)/etc/camera/portraitlight/Back_filter.NV21 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/portraitlight/Gradation.NV21:$(TARGET_COPY_OUT_VENDOR)/etc/camera/portraitlight/Gradation.NV21 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/portraitlight/Pink.NV21:$(TARGET_COPY_OUT_VENDOR)/etc/camera/portraitlight/Pink.NV21 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/portraitlight/Texture.NV21:$(TARGET_COPY_OUT_VENDOR)/etc/camera/portraitlight/Texture.NV21 \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/selfie/1_selfie.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/selfie/1_selfie.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/selfie/2_selfie.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/selfie/2_selfie.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/selfie/3_selfie.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/selfie/3_selfie.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/selfie/4_selfie.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/selfie/4_selfie.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/selfie/5_selfie.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/selfie/5_selfie.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/selfie/6_selfie.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/selfie/6_selfie.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/selfie/7_selfie.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/selfie/7_selfie.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/selfie/8_selfie.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/selfie/8_selfie.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/selfie/9_selfie.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/selfie/9_selfie.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/0_smartcam.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/0_smartcam.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/10_smartcam_food.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/10_smartcam_food.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/11_smartcam_food.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/11_smartcam_food.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/12_smartcam_food.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/12_smartcam_food.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/13_1_H_smartcam_person_rear.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/13_1_H_smartcam_person_rear.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/13_2_L_smartcam_person_rear.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/13_2_L_smartcam_person_rear.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/13_smartcam_person_rear.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/13_smartcam_person_rear.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/14_smartcam_person_rear.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/14_smartcam_person_rear.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/15_smartcam_person_rear.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/15_smartcam_person_rear.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/16_smartcam_person_rear.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/16_smartcam_person_rear.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/17_1_H_smartcam_landscape.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/17_1_H_smartcam_landscape.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/17_2_L_smartcam_landscape.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/17_2_L_smartcam_landscape.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/17_smartcam_landscape.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/17_smartcam_landscape.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/18_smartcam_landscape.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/18_smartcam_landscape.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/19_smartcam_landscape.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/19_smartcam_landscape.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/1_1_H_smartcam_pet.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/1_1_H_smartcam_pet.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/1_2_L_smartcam_pet.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/1_2_L_smartcam_pet.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/1_smartcam_pet.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/1_smartcam_pet.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/20_smartcam_landscape.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/20_smartcam_landscape.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/21_1_H_smartcam_sunset_sunrise.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/21_1_H_smartcam_sunset_sunrise.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/21_2_L_smartcam_sunset_sunrise.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/21_2_L_smartcam_sunset_sunrise.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/21_smartcam_sunset_sunrise.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/21_smartcam_sunset_sunrise.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/22_smartcam_sunset_sunrise.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/22_smartcam_sunset_sunrise.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/23_smartcam_sunset_sunrise.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/23_smartcam_sunset_sunrise.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/24_smartcam_sunset_sunrise.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/24_smartcam_sunset_sunrise.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/25_smartcam_flower.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/25_smartcam_flower.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/26_smartcam_flower.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/26_smartcam_flower.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/27_smartcam_flower.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/27_smartcam_flower.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/28_smartcam_flower.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/28_smartcam_flower.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/29_1_H_smartcam_people_rear.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/29_1_H_smartcam_people_rear.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/29_2_L_smartcam_people_rear.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/29_2_L_smartcam_people_rear.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/29_smartcam_people_rear.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/29_smartcam_people_rear.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/2_smartcam_pet.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/2_smartcam_pet.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/30_smartcam_people_rear.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/30_smartcam_people_rear.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/31_smartcam_people_rear.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/31_smartcam_people_rear.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/32_smartcam_people_rear.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/32_smartcam_people_rear.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/33_1_H_smartcam_baby_rear.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/33_1_H_smartcam_baby_rear.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/33_2_L_smartcam_baby_rear.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/33_2_L_smartcam_baby_rear.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/33_smartcam_baby_rear.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/33_smartcam_baby_rear.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/34_smartcam_baby_rear.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/34_smartcam_baby_rear.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/35_smartcam_baby_rear.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/35_smartcam_baby_rear.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/36_smartcam_baby_rear.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/36_smartcam_baby_rear.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/37_smartcam_animal.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/37_smartcam_animal.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/38_smartcam_animal.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/38_smartcam_animal.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/39_smartcam_animal.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/39_smartcam_animal.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/3_smartcam_pet.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/3_smartcam_pet.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/40_smartcam_animal.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/40_smartcam_animal.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/41_1_H_smartcam_beverage.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/41_1_H_smartcam_beverage.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/41_2_L_smartcam_beverage.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/41_2_L_smartcam_beverage.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/41_smartcam_beverage.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/41_smartcam_beverage.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/42_smartcam_beverage.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/42_smartcam_beverage.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/43_smartcam_beverage.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/43_smartcam_beverage.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/44_smartcam_beverage.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/44_smartcam_beverage.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/45_smartcam_fruit.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/45_smartcam_fruit.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/46_smartcam_fruit.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/46_smartcam_fruit.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/47_smartcam_fruit.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/47_smartcam_fruit.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/48_smartcam_fruit.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/48_smartcam_fruit.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/49_smartcam_snow.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/49_smartcam_snow.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/4_smartcam_pet.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/4_smartcam_pet.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/50_smartcam_snow.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/50_smartcam_snow.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/51_smartcam_snow.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/51_smartcam_snow.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/52_smartcam_snow.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/52_smartcam_snow.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/53_1_H_smartcam_sky.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/53_1_H_smartcam_sky.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/53_2_L_smartcam_sky.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/53_2_L_smartcam_sky.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/53_smartcam_sky.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/53_smartcam_sky.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/54_smartcam_sky.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/54_smartcam_sky.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/55_smartcam_sky.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/55_smartcam_sky.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/56_smartcam_sky.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/56_smartcam_sky.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/57_smartcam_beach.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/57_smartcam_beach.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/58_smartcam_beach.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/58_smartcam_beach.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/59_smartcam_beach.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/59_smartcam_beach.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/5_1_H_smartcam_city.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/5_1_H_smartcam_city.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/5_2_L_smartcam_city.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/5_2_L_smartcam_city.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/5_smartcam_city.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/5_smartcam_city.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/60_smartcam_beach.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/60_smartcam_beach.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/61_smartcam_lowlight.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/61_smartcam_lowlight.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/62_smartcam_lowlight.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/62_smartcam_lowlight.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/63_smartcam_lowlight.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/63_smartcam_lowlight.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/64_smartcam_lowlight.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/64_smartcam_lowlight.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/65_1_H_smartcam_person_front.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/65_1_H_smartcam_person_front.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/65_2_L_smartcam_person_front.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/65_2_L_smartcam_person_front.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/65_smartcam_person_front.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/65_smartcam_person_front.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/66_smartcam_person_front.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/66_smartcam_person_front.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/67_smartcam_person_front.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/67_smartcam_person_front.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/68_smartcam_person_front.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/68_smartcam_person_front.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/69_1_H_smartcam_people_front.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/69_1_H_smartcam_people_front.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/69_2_L_smartcam_people_front.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/69_2_L_smartcam_people_front.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/69_smartcam_people_front.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/69_smartcam_people_front.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/6_smartcam_city.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/6_smartcam_city.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/70_smartcam_people_front.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/70_smartcam_people_front.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/71_smartcam_people_front.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/71_smartcam_people_front.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/72_smartcam_people_front.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/72_smartcam_people_front.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/73_1_H_smartcam_baby_front.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/73_1_H_smartcam_baby_front.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/73_2_L_smartcam_baby_front.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/73_2_L_smartcam_baby_front.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/73_smartcam_baby_front.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/73_smartcam_baby_front.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/74_smartcam_baby_front.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/74_smartcam_baby_front.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/75_smartcam_baby_front.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/75_smartcam_baby_front.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/76_smartcam_baby_front.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/76_smartcam_baby_front.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/7_smartcam_city.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/7_smartcam_city.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/8_smartcam_city.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/8_smartcam_city.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/91_smartcam_basic_01.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/91_smartcam_basic_01.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/92_smartcam_basic_02.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/92_smartcam_basic_02.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/93_smartcam_basic_03.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/93_smartcam_basic_03.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/94_smartcam_basic_04.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/94_smartcam_basic_04.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/9_1_H_smartcam_food.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/9_1_H_smartcam_food.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/9_2_L_smartcam_food.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/9_2_L_smartcam_food.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/9_smartcam_food.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/9_smartcam_food.dat \
+    vendor/lge/timelm/proprietary/vendor/etc/camera/vnr/SJ_VideoNR_LUT.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vnr/SJ_VideoNR_LUT.bin \
     vendor/lge/timelm/proprietary/vendor/etc/charger_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fstab.qti \
     vendor/lge/timelm/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
     vendor/lge/timelm/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
@@ -236,6 +501,7 @@ PRODUCT_PACKAGES += \
     libc2d30_bltlib \
     libdiag \
     libgpudataproducer \
+    libgrallocutils \
     libgsl \
     libllvm-glnext \
     libllvm-qcom \
@@ -439,8 +705,22 @@ PRODUCT_PACKAGES += \
     liblg_awb_param_s5kgw1n_video8 \
     liblg_awb_param_s5kgw1n_video9 \
     sensors.hal.flicker \
+    com.lge.feature2.swmf \
+    com.qti.feature2.anchorsync \
+    com.qti.feature2.demux \
+    com.qti.feature2.frameselect \
+    com.qti.feature2.fusion \
     com.qti.feature2.generic \
     com.qti.feature2.gs \
+    com.qti.feature2.hdr \
+    com.qti.feature2.memcpy \
+    com.qti.feature2.mfsr \
+    com.qti.feature2.qcfa \
+    com.qti.feature2.rawhdr \
+    com.qti.feature2.rt \
+    com.qti.feature2.serializer \
+    com.qti.feature2.stub \
+    com.qti.feature2.swmf \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     com.qualcomm.qti.imscmservice@1.0 \
     com.qualcomm.qti.imscmservice@2.0 \
@@ -525,6 +805,7 @@ PRODUCT_PACKAGES += \
     libcacertclient \
     libcamera_nn_stub \
     libcamerapostproc \
+    libcamshim \
     libcamxexternalformatutils \
     libcamxfacialfeatures \
     libcamxfdalgo \
@@ -895,6 +1176,24 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_smecns_v2_module_fv9_so_1 \
     com.qualcomm.qti.dpm.api@1.0 \
     fm_helium \
+    libAutoContrast \
+    libLGCameraSolution-jni \
+    libOpenCL_system \
+    libSNPE_G \
+    libSRIyuv_system_ext \
+    libarcsoft_beauty_picselfie_system_ext \
+    libarcsoft_dualcam_portraitlighting_system_ext \
+    libarcsoft_dualcam_refocus_system_ext \
+    libarcsoft_dualcam_refocus_front_system_ext \
+    libarcsoft_dualcam_refocus_rear_t_system_ext \
+    libarcsoft_makeup_system_ext \
+    libarcsoft_picselfie_algorithm_system_ext \
+    libarcsoft_singlecam_portrait_lighting_system_ext \
+    libc++_shared_system_ext \
+    libcvp2_system_ext \
+    libcvp2_hfi_system_ext \
+    libcvp_common_system_ext \
+    libdepthmapdecoder.arcsoft_system_ext \
     libdiag_system \
     libdpmctmgr \
     libdpmfdmgr \
@@ -903,22 +1202,34 @@ PRODUCT_PACKAGES += \
     libfm-hci \
     libimscamera_jni \
     libimsmedia_jni \
+    liblghdri_system_ext \
+    liblgsnpedeflickerclassifier \
+    liblgsnpewsunet \
     libmmosal \
     libmmparser_lite \
+    libmorpho_deflicker_image \
+    libmorpho_image_stab31_system_ext \
+    libmorpho_wdr2 \
+    libmpbase_system_ext \
     vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.imsrtpservice@3.0 \
+    LgeResourcesPort \
     CneApp \
     IWlanService \
     TimeService \
     PowerOffAlarm \
+    Cineshot \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON \
+    LGCameraApp \
     QtiTelephonyService \
+    LGCameraSolution \
     qcrilmsgtunnel \
     tcmclient \
     audiosphere \
     com.android.hotwordenrollment.common.util \
+    com.lge.camerasolution \
     com.qti.dpmframework \
     dpmapi \
     qcrilhook \
@@ -996,6 +1307,8 @@ PRODUCT_PACKAGES += \
     dpmd
 
 PRODUCT_PACKAGES += \
+    system_ext_lib64_libAutoContrast-jni_so \
+    system_ext_lib64_libmorpho_wdr2-jni_so \
     vendor_firmware_wlan_qca_cld_bdwlan_elf \
     vendor_firmware_wlan_qca_cld_bdwlan_ch0_elf \
     vendor_firmware_wlan_qca_cld_bdwlan_ch1_elf \
