@@ -1,0 +1,7 @@
+service lge_ims_phone_provider /system_ext/bin/lge_ims_phone_provider
+    class core
+    user radio
+    group radio
+
+on boot
+    setprop persist.product.lge.ims.volte_open 1
