@@ -9,13 +9,36 @@ PRODUCT_COPY_FILES += \
     vendor/lge/timelm/proprietary/product/etc/permissions/com.lge.cinemagraph.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.lge.cinemagraph.xml \
     vendor/lge/timelm/proprietary/product/etc/permissions/privapp-permissions-lg-camera.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-lg-camera.xml \
     vendor/lge/timelm/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/andsf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/andsf.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/camera_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/camera_config.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
+    vendor/lge/timelm/proprietary/system_ext/etc/ike_conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ike_conf.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/init/init.lge.iwlan.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lge.iwlan.rc \
+    vendor/lge/timelm/proprietary/system_ext/etc/init/lge_ims_phone_provider.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/lge_ims_phone_provider.rc \
+    vendor/lge/timelm/proprietary/system_ext/etc/ipsec/ipsec.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/ipsec.conf \
+    vendor/lge/timelm/proprietary/system_ext/etc/ipsec/ipsec.d/CA1.cer:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/ipsec.d/CA1.cer \
+    vendor/lge/timelm/proprietary/system_ext/etc/ipsec/ipsec.d/CA1L1.crt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/ipsec.d/CA1L1.crt \
+    vendor/lge/timelm/proprietary/system_ext/etc/ipsec/ipsec.d/cacert_232005.der:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/ipsec.d/cacert_232005.der \
+    vendor/lge/timelm/proprietary/system_ext/etc/ipsec/ipsec.d/cacert_232010.der:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/ipsec.d/cacert_232010.der \
+    vendor/lge/timelm/proprietary/system_ext/etc/ipsec/ipsec.d/cacert_232014.der:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/ipsec.d/cacert_232014.der \
+    vendor/lge/timelm/proprietary/system_ext/etc/ipsec/ipsec.d/cacert_50501.cer:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/ipsec.d/cacert_50501.cer \
+    vendor/lge/timelm/proprietary/system_ext/etc/ipsec/ipsec.d/cacert_655010.der:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/ipsec.d/cacert_655010.der \
+    vendor/lge/timelm/proprietary/system_ext/etc/ipsec/strongswan.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/strongswan.conf \
+    vendor/lge/timelm/proprietary/system_ext/etc/ipsec/updown_script:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/updown_script \
+    vendor/lge/timelm/proprietary/system_ext/etc/mapcon_conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/mapcon_conf.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.lge.camerasolution.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.lge.camerasolution.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.lge.ims.httpTxn.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.lge.ims.httpTxn.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.lge.jansky.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.lge.jansky.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.lge.server.ims.sms.scbm.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.lge.server.ims.sms.scbm.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.lge.wfcsupport.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.lge.wfcsupport.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/permissions/lgdataservice-manager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/lgdataservice-manager.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/permissions/lgsvcitems.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/lgsvcitems.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/permissions/privapp-permissions-lge-data-service.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-lge-data-service.xml \
+    vendor/lge/timelm/proprietary/system_ext/etc/permissions/privapp-permissions-lge-ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-lge-ims.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
@@ -347,6 +370,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/timelm/proprietary/vendor/etc/init/imsdatadaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdatadaemon.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/imsqmidaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsqmidaemon.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/imsrcsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsrcsd.rc \
+    vendor/lge/timelm/proprietary/vendor/etc/init/init.lge.ims.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.lge.ims.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
@@ -1174,10 +1198,13 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_mmecns_module_so_1 \
     vendor_lib_rfsa_adsp_sm_fluence_sb_module_so_1 \
     vendor_lib_rfsa_adsp_smecns_v2_module_fv9_so_1 \
+    LGDataFeature \
     com.qualcomm.qti.dpm.api@1.0 \
     fm_helium \
     libAutoContrast \
     libLGCameraSolution-jni \
+    libLgeProductFeatures2 \
+    libLgeProductProperties \
     libOpenCL_system \
     libSNPE_G \
     libSRIyuv_system_ext \
@@ -1190,6 +1217,7 @@ PRODUCT_PACKAGES += \
     libarcsoft_picselfie_algorithm_system_ext \
     libarcsoft_singlecam_portrait_lighting_system_ext \
     libc++_shared_system_ext \
+    libcharon \
     libcvp2_system_ext \
     libcvp2_hfi_system_ext \
     libcvp_common_system_ext \
@@ -1200,8 +1228,12 @@ PRODUCT_PACKAGES += \
     libdpmframework \
     libdpmtcm \
     libfm-hci \
+    libims.lge \
     libimscamera_jni \
+    libimscamerajni.lge \
     libimsmedia_jni \
+    libimsmmpf.lge \
+    libimswms.lge \
     liblghdri_system_ext \
     liblgsnpedeflickerclassifier \
     liblgsnpewsunet \
@@ -1211,6 +1243,12 @@ PRODUCT_PACKAGES += \
     libmorpho_image_stab31_system_ext \
     libmorpho_wdr2 \
     libmpbase_system_ext \
+    libpatchcodeid \
+    libsimaka \
+    libstrongswan \
+    vendor.lge.hardware.property@2.0 \
+    vendor.lge.hardware.soi@1.0 \
+    vendor.lge.hardware.vss_ims@1.0_system_ext \
     vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.imsrtpservice@3.0 \
@@ -1224,14 +1262,21 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleHEXAGON \
     LGCameraApp \
     QtiTelephonyService \
+    Ims6 \
     LGCameraSolution \
+    lgdataservice \
     qcrilmsgtunnel \
     tcmclient \
     audiosphere \
     com.android.hotwordenrollment.common.util \
     com.lge.camerasolution \
+    com.lge.ims.httpTxn \
+    com.lge.jansky \
+    com.lge.wfcsupport \
     com.qti.dpmframework \
     dpmapi \
+    lgdataservice-manager \
+    lgsvcitems \
     qcrilhook \
     qti-telephony-common \
     vendor.qti.hardware.alarm-V1.0-java \
@@ -1304,10 +1349,25 @@ PRODUCT_PACKAGES += \
     xtra-daemon \
     xtwifi-client \
     xtwifi-inet-agent \
-    dpmd
+    charon \
+    dpmd \
+    imsipsecclient \
+    imsipsecstarter \
+    ipsec \
+    ipsecd \
+    lge_ims_phone_provider \
+    starter \
+    stroke
 
 PRODUCT_PACKAGES += \
     system_ext_lib64_libAutoContrast-jni_so \
+    system_ext_priv-app_Ims6_lib_arm64_libc++_shared_so \
+    system_ext_priv-app_Ims6_lib_arm64_libims_lge_so \
+    system_ext_priv-app_Ims6_lib_arm64_libimscamera_jni_so \
+    system_ext_priv-app_Ims6_lib_arm64_libimscamerajni_lge_so \
+    system_ext_priv-app_Ims6_lib_arm64_libimsmedia_jni_so \
+    system_ext_priv-app_Ims6_lib_arm64_libimsmmpf_lge_so \
+    system_ext_priv-app_Ims6_lib_arm64_libimswms_lge_so \
     system_ext_lib64_libmorpho_wdr2-jni_so \
     vendor_firmware_wlan_qca_cld_bdwlan_elf \
     vendor_firmware_wlan_qca_cld_bdwlan_ch0_elf \

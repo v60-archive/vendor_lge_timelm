@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+  <privapp-permissions package="com.lge.ims">
+    <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+    <permission name="android.permission.CONNECTIVITY_INTERNAL"/>
+    <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    <permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <permission name="android.permission.LOCATION_BYPASS"/>
+    <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <permission name="android.permission.MANAGE_USERS"/>
+    <permission name="android.permission.MODIFY_PHONE_STATE"/>
+    <permission name="android.permission.READ_PRECISE_PHONE_STATE"/>
+    <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <permission name="android.permission.BROADCAST_STICKY"/>
+    <permission name="product.lge.data.permission.USE_LGE_DATA_SERVICE"/>
+    <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
+    <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <permission name="android.permission.STATUS_BAR"/>
+    <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+  </privapp-permissions>
+</permissions>
