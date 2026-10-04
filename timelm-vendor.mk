@@ -1360,6 +1360,24 @@ PRODUCT_PACKAGES += \
     stroke
 
 PRODUCT_PACKAGES += \
+    libbinder_ims \
+    libgui_ims \
+    libhidlbase_ims \
+    libhidltransport_ims \
+    libhwbinder_ims \
+    libmedia_ims \
+    libui_ims \
+    libutils_ims \
+    libbinder_ims_priv-app \
+    libgui_ims_priv-app \
+    libhidlbase_ims_priv-app \
+    libhidltransport_ims_priv-app \
+    libhwbinder_ims_priv-app \
+    libmedia_ims_priv-app \
+    libui_ims_priv-app \
+    libutils_ims_priv-app
+
+PRODUCT_PACKAGES += \
     system_ext_lib64_libAutoContrast-jni_so \
     system_ext_priv-app_Ims6_lib_arm64_libc++_shared_so \
     system_ext_priv-app_Ims6_lib_arm64_libims_lge_so \
