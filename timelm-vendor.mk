@@ -8,12 +8,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/lge/timelm/proprietary/product/etc/permissions/com.lge.cinemagraph.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.lge.cinemagraph.xml \
     vendor/lge/timelm/proprietary/product/etc/permissions/privapp-permissions-lg-camera.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-lg-camera.xml \
-    vendor/lge/timelm/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/andsf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/andsf.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/camera_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/camera_config.xml \
-    vendor/lge/timelm/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/lge/timelm/proprietary/system_ext/etc/ike_conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ike_conf.xml \
-	vendor/lge/timelm/proprietary/system_ext/etc/init/init.lge.ims.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lge.ims.rc \
+    vendor/lge/timelm/proprietary/system_ext/etc/init/init.lge.ims.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lge.ims.rc \
     vendor/lge/timelm/proprietary/system_ext/etc/init/init.lge.iwlan.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lge.iwlan.rc \
     vendor/lge/timelm/proprietary/system_ext/etc/ipsec/ipsec.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/ipsec.conf \
     vendor/lge/timelm/proprietary/system_ext/etc/ipsec/ipsec.d/CA1.cer:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/ipsec.d/CA1.cer \
@@ -26,23 +24,16 @@ PRODUCT_COPY_FILES += \
     vendor/lge/timelm/proprietary/system_ext/etc/ipsec/strongswan.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/strongswan.conf \
     vendor/lge/timelm/proprietary/system_ext/etc/ipsec/updown_script:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ipsec/updown_script \
     vendor/lge/timelm/proprietary/system_ext/etc/mapcon_conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/mapcon_conf.xml \
-    vendor/lge/timelm/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.lge.camerasolution.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.lge.camerasolution.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.lge.ims.httpTxn.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.lge.ims.httpTxn.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.lge.jansky.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.lge.jansky.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.lge.server.ims.sms.scbm.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.lge.server.ims.sms.scbm.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.lge.wfcsupport.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.lge.wfcsupport.xml \
-    vendor/lge/timelm/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
-    vendor/lge/timelm/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/lgdataservice-manager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/lgdataservice-manager.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/lgsvcitems.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/lgsvcitems.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/privapp-permissions-lge-data-service.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-lge-data-service.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/permissions/privapp-permissions-lge-ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-lge-ims.xml \
-    vendor/lge/timelm/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
-    vendor/lge/timelm/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
-    vendor/lge/timelm/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
-    vendor/lge/timelm/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/solution_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/solution_config.xml \
     vendor/lge/timelm/proprietary/system_ext/etc/sysconfig/lge_camera_hiddenapi_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/lge_camera_hiddenapi_whitelist.xml \
     vendor/lge/timelm/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
@@ -317,7 +308,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/9_2_L_smartcam_food.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/9_2_L_smartcam_food.dat \
     vendor/lge/timelm/proprietary/vendor/etc/camera/smartcam/9_smartcam_food.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/smartcam/9_smartcam_food.dat \
     vendor/lge/timelm/proprietary/vendor/etc/camera/vnr/SJ_VideoNR_LUT.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vnr/SJ_VideoNR_LUT.bin \
-    vendor/lge/timelm/proprietary/vendor/etc/charger_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fstab.qti \
     vendor/lge/timelm/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
     vendor/lge/timelm/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
     vendor/lge/timelm/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
@@ -353,13 +343,11 @@ PRODUCT_COPY_FILES += \
     vendor/lge/timelm/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
     vendor/lge/timelm/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/lge/timelm/proprietary/vendor/etc/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml \
-    vendor/lge/timelm/proprietary/vendor/etc/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf \
     vendor/lge/timelm/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/lge/timelm/proprietary/vendor/etc/graphite_ipc_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/graphite_ipc_platform_info.xml \
     vendor/lge/timelm/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
-    vendor/lge/timelm/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-qti.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service-qti.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
@@ -379,36 +367,25 @@ PRODUCT_COPY_FILES += \
     vendor/lge/timelm/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
-    vendor/lge/timelm/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/vendor.lge.hardware.lgdata@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.lgdata@1.1-service.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/vendor.lge.hardware.vss_ims@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.vss_ims@1.0-service.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/vendor.qti.adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-service.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
-    vendor/lge/timelm/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
-    vendor/lge/timelm/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
-    vendor/lge/timelm/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/lge/timelm/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/lge/timelm/proprietary/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
-    vendor/lge/timelm/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
     vendor/lge/timelm/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/lge/timelm/proprietary/vendor/etc/qdcm_calib_data_SW43103_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_SW43103_cmd_mode_dsc_dsi_panel.xml \
-    vendor/lge/timelm/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm.policy \
-    vendor/lge/timelm/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm.policy \
-    vendor/lge/timelm/proprietary/vendor/etc/seccomp_policy/gnss@2.0-base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-base.policy \
-    vendor/lge/timelm/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy \
-    vendor/lge/timelm/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy \
-    vendor/lge/timelm/proprietary/vendor/etc/seccomp_policy/gnss@2.0-xtwifi-inet-agent.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/gnss@2.0-xtwifi-inet-agent.policy \
     vendor/lge/timelm/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/lge/timelm/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
     vendor/lge/timelm/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
@@ -510,29 +487,14 @@ PRODUCT_COPY_FILES += \
     vendor/lge/timelm/proprietary/vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/8_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
-    eglSubDriverAndroid \
-    libEGL_adreno \
-    libGLESv1_CM_adreno \
-    libGLESv2_adreno \
-    libq3dtools_adreno \
-    libq3dtools_esx \
-    libC2D2 \
-    libCB \
-    libOpenCL \
-    libVkLayer_q3dtools \
-    libadreno_utils \
-    libc2d30_bltlib \
+    libcdsprpc \
     libdiag \
-    libgpudataproducer \
+    libfastcvdsp_stub \
+    libfastcvopt \
     libgrallocutils \
-    libgsl \
-    libllvm-glnext \
-    libllvm-qcom \
-    libxml \
+    vendor.qti.hardware.dsp@1.0 \
     btaudio_offload_if \
-    audio.primary.kona \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
-    liba2dpoffload \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
@@ -548,7 +510,6 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
     libdrc \
-    libfastcrc \
     libgcs-calwrapper \
     libgcs-ipc \
     libgcs-osal \
@@ -557,15 +518,8 @@ PRODUCT_PACKAGES += \
     liblistensoundmodel2 \
     libmulawdec \
     libpn557_fw \
-    libqcodec2_base \
-    libqcodec2_basecodec \
-    libqcodec2_core \
-    libqcodec2_platform \
-    libqcodec2_utils \
-    libqcodec2_v4l2codec \
     libqtigef \
     libsmwrapper \
-    libssrec \
     libsurround_3mic_proc \
     libwebrtc_audio_preprocessing \
     libasphere \
@@ -746,17 +700,16 @@ PRODUCT_PACKAGES += \
     com.qti.feature2.swmf \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     com.qualcomm.qti.imscmservice@1.0 \
-    com.qualcomm.qti.imscmservice@2.0 \
-    com.qualcomm.qti.imscmservice@2.1 \
-    com.qualcomm.qti.imscmservice@2.2 \
-    com.qualcomm.qti.uceservice@2.0 \
-    com.qualcomm.qti.uceservice@2.1 \
-    com.qualcomm.qti.uceservice@2.2 \
-    com.qualcomm.qti.uceservice@2.3 \
+    com.qualcomm.qti.imscmservice@2.0_vendor \
+    com.qualcomm.qti.imscmservice@2.1_vendor \
+    com.qualcomm.qti.imscmservice@2.2_vendor \
+    com.qualcomm.qti.uceservice@2.0_vendor \
+    com.qualcomm.qti.uceservice@2.1_vendor \
+    com.qualcomm.qti.uceservice@2.2_vendor \
+    com.qualcomm.qti.uceservice@2.3_vendor \
     deviceInfoServiceModule \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
-    android.hardware.gnss@2.1-impl-qti \
     camera.kona \
     com.dsi.ant@1.0-impl \
     com.qti.chi.override \
@@ -764,7 +717,6 @@ PRODUCT_PACKAGES += \
     vendor.lge.hardware.vss_ims@1.0-impl \
     vendor.qti.esepowermanager@1.1-impl \
     vendor.qti.gnss@4.0-impl \
-    vendor.qti.hardware.alarm@1.0-impl \
     vendor.qti.hardware.bluetooth_sar@1.1-impl \
     vendor.qti.hardware.btconfigstore@1.0-impl \
     vendor.qti.hardware.fm@1.0-impl \
@@ -772,7 +724,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
     vendor.qti.hardware.soter@1.0-impl \
-    vulkan.adreno \
     lgdatavendorlib \
     lge_qcci_data \
     lib-imscmservice \
@@ -806,7 +757,6 @@ PRODUCT_PACKAGES += \
     libStDrvInt \
     libadsp_default_listener \
     libadsprpc \
-    libaoa \
     libarcsoft_beauty_picselfie \
     libarcsoft_dualcam_portraitlighting \
     libarcsoft_dualcam_refocus \
@@ -816,11 +766,7 @@ PRODUCT_PACKAGES += \
     libarcsoft_object_tracking \
     libarcsoft_picselfie_algorithm \
     libarcsoft_singlecam_portrait_lighting \
-    libasn1cper \
-    libasn1crt \
-    libasn1crtx \
     libbase64 \
-    libbatching \
     libbt-hidlclient \
     libbtnv \
     libbwfocuspeaking \
@@ -828,7 +774,6 @@ PRODUCT_PACKAGES += \
     libcacertclient \
     libcamera_nn_stub \
     libcamerapostproc \
-    libcamshim \
     libcamxexternalformatutils \
     libcamxfacialfeatures \
     libcamxfdalgo \
@@ -842,10 +787,7 @@ PRODUCT_PACKAGES += \
     libcapiv2svacnn \
     libcapiv2svarnn \
     libcapiv2vop \
-    libcdfw \
-    libcdfw_remote_api \
     libcdsp_default_listener \
-    libcdsprpc \
     libchilog \
     libcne \
     libcneapiclient \
@@ -858,12 +800,9 @@ PRODUCT_PACKAGES += \
     libcvp2_hfi \
     libcvp_common \
     libcvpcpuRev_skel \
-    libdataitems \
     libdepthcomputation_wrapper \
     libdepthmapdecoder.arcsoft \
     libdisp-aba \
-    libdisplayqos \
-    libdisplayskuutils \
     libdpmqmihal \
     libdpps \
     libdrmfs \
@@ -873,18 +812,10 @@ PRODUCT_PACKAGES += \
     libeepromcutter \
     libembmsservice \
     libets_teeclient_v2 \
-    libfastcvdsp_stub \
-    libfastcvopt \
     libfilm_emulation_hal \
-    libgdtap \
-    libgeofencing \
-    libgnss \
-    libgnsspps \
-    libgps.utils \
     libhdcp1prov \
     libhdcp2p2prov \
     libhdcpsrm \
-    libhdr_tm \
     libhdrdynamic \
     libhdrdynamicootf \
     libhexagon_nn_stub \
@@ -892,31 +823,19 @@ PRODUCT_PACKAGES += \
     libidl \
     libimagerwrapper \
     libipebpsstriping \
-    libizat_client_api \
-    libizat_core \
     libjnihelper \
     libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
-    liblbs_core \
     liblgae_main \
     liblgawb_main \
     liblgdnnsnpe \
     liblghdri \
-    libloc_api_v02 \
-    libloc_core \
-    libloc_socket \
-    liblocation_api \
-    liblocationservice \
-    liblocationservice_glue \
-    liblowi_client \
-    liblowi_wifihal \
     liblqe \
     libmdmdetect \
     libmdmimgload \
     libmdsprpc \
     libminkdescriptor \
-    libminksocket \
     libmmcamera_faceproc \
     libmmcamera_faceproc2 \
     libmmosal_vendor \
@@ -940,7 +859,6 @@ PRODUCT_PACKAGES += \
     libperipheral_client \
     libpn557_fw_64 \
     libqcbor \
-    libqcc_file_agent \
     libqcci_legacy \
     libqcmaputils \
     libqcrilFramework \
@@ -959,9 +877,6 @@ PRODUCT_PACKAGES += \
     libqmi_legacy \
     libqmiextservices \
     libqmiservices \
-    libqrtr \
-    libqsap_sdk \
-    libqseed3 \
     libqsocket \
     libqtikeymaster4 \
     librcc \
@@ -980,20 +895,13 @@ PRODUCT_PACKAGES += \
     libscveObjectSegmentation_stub \
     libscveObjectTracker \
     libscveObjectTracker_stub \
-    libsdm-color \
-    libsdm-colormgr-algo \
-    libsdm-diag \
-    libsdm-disp-vndapis \
-    libsdmextension \
     libsdsprpc \
     libsecureui \
     libsecureui_svcsock \
     libsensorcal \
     libsensorslog \
     libsettings \
-    libsns_device_mode_stub \
     libsns_fastRPC_util \
-    libsns_low_lat_stream_stub \
     libsnsapi \
     libsnsdiaglog \
     libsoc_helper \
@@ -1011,7 +919,6 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     libthreadutils \
     libtime_genoff \
-    libtinyxml2_1 \
     libtrustedapploader \
     libtzdrmgenprov \
     libuicc_vendor \
@@ -1033,9 +940,7 @@ PRODUCT_PACKAGES += \
     libwms \
     libwqe \
     libwvhidl \
-    libxtadapter \
-    libxtwifi_server_protocol \
-    libxtwifi_server_protocol_uri_v3 \
+    libxml \
     qcrild_librilutils \
     qtibus \
     qtimutex \
@@ -1044,105 +949,85 @@ PRODUCT_PACKAGES += \
     unnhal-acc-adreno \
     unnhal-acc-common \
     unnhal-acc-hvx \
-    vendor.display.color@1.0 \
-    vendor.display.color@1.1 \
-    vendor.display.color@1.2 \
-    vendor.display.color@1.3 \
-    vendor.display.color@1.4 \
-    vendor.display.color@1.5 \
-    vendor.display.postproc@1.0 \
     vendor.lge.hardware.cameraex@1.0 \
     vendor.lge.hardware.lgdata@1.1 \
     vendor.lge.hardware.sensors@1.0 \
     vendor.lge.hardware.vss_ims@1.0 \
-    vendor.qti.data.factory@2.0 \
-    vendor.qti.data.factory@2.1 \
-    vendor.qti.data.factory@2.2 \
-    vendor.qti.data.factory@2.3 \
-    vendor.qti.data.mwqem@1.0 \
-    vendor.qti.data.slm@1.0 \
+    vendor.qti.data.factory@2.0_vendor \
+    vendor.qti.data.factory@2.1_vendor \
+    vendor.qti.data.factory@2.2_vendor \
+    vendor.qti.data.factory@2.3_vendor \
+    vendor.qti.data.mwqem@1.0_vendor \
+    vendor.qti.data.slm@1.0_vendor \
     vendor.qti.esepowermanager@1.0 \
     vendor.qti.esepowermanager@1.1 \
-    vendor.qti.gnss@1.0 \
-    vendor.qti.gnss@1.1 \
-    vendor.qti.gnss@1.2 \
-    vendor.qti.gnss@2.0 \
-    vendor.qti.gnss@2.1 \
-    vendor.qti.gnss@3.0 \
     vendor.qti.gnss@4.0-service \
-    vendor.qti.gnss@4.0 \
-    vendor.qti.hardware.alarm@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.cacert@1.0 \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
-    vendor.qti.hardware.data.cne.internal.api@1.0 \
-    vendor.qti.hardware.data.cne.internal.constants@1.0 \
-    vendor.qti.hardware.data.cne.internal.server@1.0 \
-    vendor.qti.hardware.data.connection@1.0 \
-    vendor.qti.hardware.data.connection@1.1 \
-    vendor.qti.hardware.data.dynamicdds@1.0 \
-    vendor.qti.hardware.data.iwlan@1.0 \
-    vendor.qti.hardware.data.latency@1.0 \
-    vendor.qti.hardware.data.lce@1.0 \
-    vendor.qti.hardware.data.qmi@1.0 \
-    vendor.qti.hardware.dsp@1.0 \
-    vendor.qti.hardware.embmssl@1.0 \
-    vendor.qti.hardware.embmssl@1.1 \
+    vendor.qti.hardware.data.cne.internal.api@1.0_vendor \
+    vendor.qti.hardware.data.cne.internal.constants@1.0_vendor \
+    vendor.qti.hardware.data.cne.internal.server@1.0_vendor \
+    vendor.qti.hardware.data.connection@1.0_vendor \
+    vendor.qti.hardware.data.connection@1.1_vendor \
+    vendor.qti.hardware.data.dynamicdds@1.0_vendor \
+    vendor.qti.hardware.data.iwlan@1.0_vendor \
+    vendor.qti.hardware.data.latency@1.0_vendor \
+    vendor.qti.hardware.data.lce@1.0_vendor \
+    vendor.qti.hardware.data.qmi@1.0_vendor \
+    vendor.qti.hardware.embmssl@1.0_vendor \
+    vendor.qti.hardware.embmssl@1.1_vendor \
     vendor.qti.hardware.fm@1.0_vendor \
-    vendor.qti.hardware.mwqemadapter@1.0 \
-    vendor.qti.hardware.qccsyshal@1.0 \
+    vendor.qti.hardware.mwqemadapter@1.0_vendor \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
-    vendor.qti.hardware.radio.am@1.0 \
-    vendor.qti.hardware.radio.atcmdfwd@1.0 \
-    vendor.qti.hardware.radio.ims@1.0 \
-    vendor.qti.hardware.radio.ims@1.1 \
-    vendor.qti.hardware.radio.ims@1.2 \
-    vendor.qti.hardware.radio.ims@1.3 \
-    vendor.qti.hardware.radio.ims@1.4 \
-    vendor.qti.hardware.radio.ims@1.5 \
-    vendor.qti.hardware.radio.ims@1.6 \
-    vendor.qti.hardware.radio.ims@1.7 \
-    vendor.qti.hardware.radio.internal.deviceinfo@1.0 \
-    vendor.qti.hardware.radio.lpa@1.0 \
-    vendor.qti.hardware.radio.lpa@1.1 \
-    vendor.qti.hardware.radio.lpa@1.2 \
-    vendor.qti.hardware.radio.qcrilhook@1.0 \
-    vendor.qti.hardware.radio.qtiradio@1.0 \
-    vendor.qti.hardware.radio.qtiradio@2.0 \
-    vendor.qti.hardware.radio.qtiradio@2.1 \
-    vendor.qti.hardware.radio.qtiradio@2.2 \
-    vendor.qti.hardware.radio.qtiradio@2.3 \
-    vendor.qti.hardware.radio.qtiradio@2.4 \
-    vendor.qti.hardware.radio.qtiradio@2.5 \
-    vendor.qti.hardware.radio.qtiradio@2.6 \
-    vendor.qti.hardware.radio.uim@1.0 \
-    vendor.qti.hardware.radio.uim@1.1 \
-    vendor.qti.hardware.radio.uim@1.2 \
-    vendor.qti.hardware.radio.uim_remote_client@1.0 \
-    vendor.qti.hardware.radio.uim_remote_client@1.1 \
-    vendor.qti.hardware.radio.uim_remote_client@1.2 \
-    vendor.qti.hardware.radio.uim_remote_server@1.0 \
+    vendor.qti.hardware.radio.am@1.0_vendor \
+    vendor.qti.hardware.radio.atcmdfwd@1.0_vendor \
+    vendor.qti.hardware.radio.ims@1.0_vendor \
+    vendor.qti.hardware.radio.ims@1.1_vendor \
+    vendor.qti.hardware.radio.ims@1.2_vendor \
+    vendor.qti.hardware.radio.ims@1.3_vendor \
+    vendor.qti.hardware.radio.ims@1.4_vendor \
+    vendor.qti.hardware.radio.ims@1.5_vendor \
+    vendor.qti.hardware.radio.ims@1.6_vendor \
+    vendor.qti.hardware.radio.ims@1.7_vendor \
+    vendor.qti.hardware.radio.internal.deviceinfo@1.0_vendor \
+    vendor.qti.hardware.radio.lpa@1.0_vendor \
+    vendor.qti.hardware.radio.lpa@1.1_vendor \
+    vendor.qti.hardware.radio.lpa@1.2_vendor \
+    vendor.qti.hardware.radio.qcrilhook@1.0_vendor \
+    vendor.qti.hardware.radio.qtiradio@1.0_vendor \
+    vendor.qti.hardware.radio.qtiradio@2.0_vendor \
+    vendor.qti.hardware.radio.qtiradio@2.1_vendor \
+    vendor.qti.hardware.radio.qtiradio@2.2_vendor \
+    vendor.qti.hardware.radio.qtiradio@2.3_vendor \
+    vendor.qti.hardware.radio.qtiradio@2.4_vendor \
+    vendor.qti.hardware.radio.qtiradio@2.5_vendor \
+    vendor.qti.hardware.radio.qtiradio@2.6_vendor \
+    vendor.qti.hardware.radio.uim@1.0_vendor \
+    vendor.qti.hardware.radio.uim@1.1_vendor \
+    vendor.qti.hardware.radio.uim@1.2_vendor \
+    vendor.qti.hardware.radio.uim_remote_client@1.0_vendor \
+    vendor.qti.hardware.radio.uim_remote_client@1.1_vendor \
+    vendor.qti.hardware.radio.uim_remote_client@1.2_vendor \
+    vendor.qti.hardware.radio.uim_remote_server@1.0_vendor \
     vendor.qti.hardware.sensorscalibrate@1.0 \
-    vendor.qti.hardware.slmadapter@1.0 \
+    vendor.qti.hardware.slmadapter@1.0_vendor \
     vendor.qti.hardware.soter@1.0 \
     vendor.qti.hardware.tui_comm@1.0 \
-    vendor.qti.hardware.vpp@1.1 \
-    vendor.qti.hardware.vpp@1.2 \
-    vendor.qti.hardware.vpp@1.3 \
-    vendor.qti.ims.callcapability@1.0 \
-    vendor.qti.ims.callinfo@1.0 \
-    vendor.qti.ims.factory@1.0 \
-    vendor.qti.ims.factory@1.1 \
-    vendor.qti.ims.rcsconfig@1.0 \
-    vendor.qti.ims.rcsconfig@1.1 \
-    vendor.qti.ims.rcsconfig@2.0 \
-    vendor.qti.ims.rcsconfig@2.1 \
+    vendor.qti.ims.callcapability@1.0_vendor \
+    vendor.qti.ims.callinfo@1.0_vendor \
+    vendor.qti.ims.factory@1.0_vendor \
+    vendor.qti.ims.factory@1.1_vendor \
+    vendor.qti.ims.rcsconfig@1.0_vendor \
+    vendor.qti.ims.rcsconfig@1.1_vendor \
+    vendor.qti.ims.rcsconfig@2.0_vendor \
+    vendor.qti.ims.rcsconfig@2.1_vendor \
     vendor.qti.imsrtpservice@3.0-service-Impl \
     vendor.qti.imsrtpservice@3.0_vendor \
-    vendor.qti.latency@2.0 \
-    vendor.qti.latency@2.1 \
+    vendor.qti.latency@2.0_vendor \
+    vendor.qti.latency@2.1_vendor \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
     vendor_lib_rfsa_adsp_AlacDecoderModule_so_1 \
@@ -1198,7 +1083,6 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_sm_fluence_sb_module_so_1 \
     vendor_lib_rfsa_adsp_smecns_v2_module_fv9_so_1 \
     LGDataFeature \
-    com.qualcomm.qti.dpm.api@1.0 \
     fm_helium \
     libAutoContrast \
     libLGCameraSolution-jni \
@@ -1221,23 +1105,14 @@ PRODUCT_PACKAGES += \
     libcvp2_hfi_system_ext \
     libcvp_common_system_ext \
     libdepthmapdecoder.arcsoft_system_ext \
-    libdiag_system \
-    libdpmctmgr \
-    libdpmfdmgr \
-    libdpmframework \
-    libdpmtcm \
     libfm-hci \
     libims.lge \
-    libimscamera_jni \
     libimscamerajni.lge \
-    libimsmedia_jni \
     libimsmmpf.lge \
     libimswms.lge \
     liblghdri_system_ext \
     liblgsnpedeflickerclassifier \
     liblgsnpewsunet \
-    libmmosal \
-    libmmparser_lite \
     libmorpho_deflicker_image \
     libmorpho_image_stab31_system_ext \
     libmorpho_wdr2 \
@@ -1248,38 +1123,24 @@ PRODUCT_PACKAGES += \
     vendor.lge.hardware.property@2.0 \
     vendor.lge.hardware.soi@1.0 \
     vendor.lge.hardware.vss_ims@1.0_system_ext \
-    vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.fm@1.0 \
-    vendor.qti.imsrtpservice@3.0 \
-    LgeResourcesPort \
     CneApp \
     IWlanService \
     TimeService \
-    PowerOffAlarm \
     Cineshot \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON \
     LGCameraApp \
-    QtiTelephonyService \
     Ims6 \
     LGCameraSolution \
     lgdataservice \
-    qcrilmsgtunnel \
-    tcmclient \
-    audiosphere \
     com.android.hotwordenrollment.common.util \
     com.lge.camerasolution \
     com.lge.ims.httpTxn \
     com.lge.jansky \
     com.lge.wfcsupport \
-    com.qti.dpmframework \
-    dpmapi \
     lgdataservice-manager \
     lgsvcitems \
-    qcrilhook \
-    qti-telephony-common \
-    vendor.qti.hardware.alarm-V1.0-java \
-    android.hardware.gnss@2.1-service-qti.xml \
     android.hardware.neuralnetworks@1.3-service-qti.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     vendor.qti.gnss@4.0-service.xml \
@@ -1287,46 +1148,34 @@ PRODUCT_PACKAGES += \
     adsprpcd \
     cdsprpcd \
     cnd \
-    cnss-daemon \
     dpmQmiMgr \
     dspservice \
     fm_qsoc_patches \
-    hvdcp_opti \
     android.hardware.bluetooth@1.0-service-qti \
     android.hardware.drm@1.3-service.widevine \
     android.hardware.gatekeeper@1.0-service-qti \
-    android.hardware.gnss@2.1-service-qti \
     android.hardware.keymaster@4.0-service-qti \
     android.hardware.neuralnetworks@1.3-service-qti \
     android.hardware.nfc@1.2-service-cxd22xx \
     qcrild \
-    vendor.display.color@1.0-service \
     vendor.lge.hardware.lgdata@1.1-service \
     vendor.lge.hardware.vss_ims@1.0-service \
     vendor.qti.esepowermanager@1.1-service \
-    vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.qteeconnector@1.0-service \
     vendor.qti.hardware.sensorscalibrate@1.0-service \
     vendor.qti.hardware.soter@1.0-service \
     vendor.qti.hardware.tui_comm@1.0-service-qti \
-    vendor.qti.media.c2@1.0-service \
     ims_rtp_daemon \
     imsdatadaemon \
     imsqmidaemon \
     imsrcsd \
-    init.qti.chg_policy \
     ks \
-    loc_launcher \
-    lowi-server \
     mdm_helper \
-    mlid \
-    msm_irqbalance \
     netmgrd \
     pd-mapper \
     pm-proxy \
     pm-service \
-    power_off_alarm \
     ppd \
     qdcmss \
     qmipriod \
@@ -1345,11 +1194,7 @@ PRODUCT_PACKAGES += \
     thermal-engine \
     time_daemon \
     vppservice \
-    xtra-daemon \
-    xtwifi-client \
-    xtwifi-inet-agent \
     charon \
-    dpmd \
     imsipsecclient \
     imsipsecstarter \
     ipsec \
@@ -1358,39 +1203,13 @@ PRODUCT_PACKAGES += \
     stroke
 
 PRODUCT_PACKAGES += \
-    libbinder_ims \
-    libgui_ims \
-    libhidlbase_ims \
-    libhidltransport_ims \
-    libhwbinder_ims \
-    libmedia_ims \
-    libui_ims \
-    libutils_ims \
-    libbinder_ims_priv-app \
-    libgui_ims_priv-app \
-    libhidlbase_ims_priv-app \
-    libhidltransport_ims_priv-app \
-    libhwbinder_ims_priv-app \
-    libmedia_ims_priv-app \
-    libui_ims_priv-app \
-    libutils_ims_priv-app
-
-PRODUCT_PACKAGES += \
     system_ext_lib64_libAutoContrast-jni_so \
     system_ext_priv-app_Ims6_lib_arm64_libc++_shared_so \
     system_ext_priv-app_Ims6_lib_arm64_libims_lge_so \
-    system_ext_priv-app_Ims6_lib_arm64_libimscamera_jni_so \
     system_ext_priv-app_Ims6_lib_arm64_libimscamerajni_lge_so \
-    system_ext_priv-app_Ims6_lib_arm64_libimsmedia_jni_so \
     system_ext_priv-app_Ims6_lib_arm64_libimsmmpf_lge_so \
     system_ext_priv-app_Ims6_lib_arm64_libimswms_lge_so \
     system_ext_lib64_libmorpho_wdr2-jni_so \
     vendor_firmware_wlan_qca_cld_bdwlan_elf \
     vendor_firmware_wlan_qca_cld_bdwlan_ch0_elf \
-    vendor_firmware_wlan_qca_cld_bdwlan_ch1_elf \
-    vendor_lib_libEGL_adreno_so \
-    vendor_lib_libGLESv2_adreno_so \
-    vendor_lib_libq3dtools_adreno_so \
-    vendor_lib64_libEGL_adreno_so \
-    vendor_lib64_libGLESv2_adreno_so \
-    vendor_lib64_libq3dtools_adreno_so
+    vendor_firmware_wlan_qca_cld_bdwlan_ch1_elf
