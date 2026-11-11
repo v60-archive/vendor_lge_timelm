@@ -716,7 +716,6 @@ PRODUCT_PACKAGES += \
     fingerprint.kona \
     vendor.lge.hardware.vss_ims@1.0-impl \
     vendor.qti.esepowermanager@1.1-impl \
-    vendor.qti.gnss@4.0-impl \
     vendor.qti.hardware.bluetooth_sar@1.1-impl \
     vendor.qti.hardware.btconfigstore@1.0-impl \
     vendor.qti.hardware.fm@1.0-impl \
@@ -961,7 +960,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.data.slm@1.0_vendor \
     vendor.qti.esepowermanager@1.0 \
     vendor.qti.esepowermanager@1.1 \
-    vendor.qti.gnss@4.0-service \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.cacert@1.0 \
@@ -1143,7 +1141,6 @@ PRODUCT_PACKAGES += \
     lgsvcitems \
     android.hardware.neuralnetworks@1.3-service-qti.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
-    vendor.qti.gnss@4.0-service.xml \
     adpl \
     adsprpcd \
     cdsprpcd \

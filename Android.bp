@@ -6870,53 +6870,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.gnss@4.0-impl",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libutils",
-                "android.hardware.gnss@1.0",
-                "android.hardware.gnss@1.1",
-                "vendor.qti.gnss@1.0",
-                "vendor.qti.gnss@1.1",
-                "vendor.qti.gnss@1.2",
-                "vendor.qti.gnss@2.0",
-                "vendor.qti.gnss@2.1",
-                "vendor.qti.gnss@3.0",
-                "vendor.qti.gnss@4.0",
-                "libloc_core",
-                "libgps.utils",
-                "liblocation_api",
-                "liblocationservice_glue",
-                "liblbs_core",
-                "libdataitems",
-                "liblocationservice",
-                "libxtadapter",
-                "libizat_core",
-                "libizat_client_api",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.bluetooth_sar@1.1-impl",
     owner: "lge",
     strip: {
@@ -14174,47 +14127,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.gnss@4.0-service",
-    owner: "lge",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.gnss@4.0-service.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libgps.utils",
-                "libqti_vndfwk_detect",
-                "libhidlbase",
-                "android.hardware.gnss@1.0",
-                "android.hardware.gnss@1.1",
-                "android.hardware.gnss@2.0",
-                "vendor.qti.gnss@1.0",
-                "vendor.qti.gnss@1.1",
-                "vendor.qti.gnss@1.2",
-                "vendor.qti.gnss@2.0",
-                "vendor.qti.gnss@2.1",
-                "vendor.qti.gnss@3.0",
-                "vendor.qti.gnss@4.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.bluetooth_sar@1.0",
     owner: "lge",
     strip: {
@@ -18148,15 +18060,6 @@ prebuilt_etc_xml {
     name: "manifest_android.hardware.drm@1.3-service.widevine.xml",
     owner: "lge",
     src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "vendor.qti.gnss@4.0-service.xml",
-    owner: "lge",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
