@@ -1130,6 +1130,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleHEXAGON \
     LGCameraApp \
     Ims6 \
+    LgeResourcesPort \
     LGCameraSolution \
     lgdataservice \
     com.android.hotwordenrollment.common.util \

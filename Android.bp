@@ -17961,6 +17961,17 @@ android_app_import {
 }
 
 android_app_import {
+    name: "LgeResourcesPort",
+    owner: "lge",
+    apk: "proprietary/system/priv-app/LgeResourcesPort/LgeResourcesPort.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+}
+
+android_app_import {
     name: "LGCameraSolution",
     owner: "lge",
     apk: "proprietary/system_ext/priv-app/LGCameraSolution/LGCameraSolution.apk",
