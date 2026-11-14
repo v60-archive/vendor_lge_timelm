@@ -977,7 +977,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.qmi@1.0_vendor \
     vendor.qti.hardware.embmssl@1.0_vendor \
     vendor.qti.hardware.embmssl@1.1_vendor \
-    vendor.qti.hardware.fm@1.0_vendor \
     vendor.qti.hardware.mwqemadapter@1.0_vendor \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
