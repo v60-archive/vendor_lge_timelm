@@ -44,6 +44,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/timelm/proprietary/vendor/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Headset_cal.acdb \
     vendor/lge/timelm/proprietary/vendor/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Speaker_cal.acdb \
     vendor/lge/timelm/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
+    vendor/lge/timelm/proprietary/vendor/etc/aisound_tune.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aisound_tune.xml \
     vendor/lge/timelm/proprietary/vendor/etc/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf \
     vendor/lge/timelm/proprietary/vendor/etc/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
     vendor/lge/timelm/proprietary/vendor/etc/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
@@ -438,6 +439,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/timelm/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
     vendor/lge/timelm/proprietary/vendor/etc/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
     vendor/lge/timelm/proprietary/vendor/etc/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml \
+    vendor/lge/timelm/proprietary/vendor/etc/upmix_model.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/upmix_model.tflite \
     vendor/lge/timelm/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/lge/timelm/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/lge/timelm/proprietary/vendor/etc/thermal-engine-8250.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-8250.conf \
@@ -523,6 +525,7 @@ PRODUCT_PACKAGES += \
     libsmwrapper \
     libsurround_3mic_proc \
     libwebrtc_audio_preprocessing \
+    libaisound \
     libasphere \
     liblgeffectwrapper \
     libqcbassboost \
