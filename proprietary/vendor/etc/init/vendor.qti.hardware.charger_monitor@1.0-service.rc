@@ -5,12 +5,7 @@
 # Copyright (c) 2013-2018, The Linux Foundation. All rights reserved.
 #
 
-service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
-    class main
-    user system
-    group system wakelock
-    capabilities BLOCK_SUSPEND WAKE_ALARM
-    disabled
+# timelm: no hvdcp_opti; it needs a QG/QBG BMS over IIO, kona has FG gen4
 
 service vendor.qti-chg-policy-sh /vendor/bin/init.qti.chg_policy.sh
     class core
@@ -34,10 +29,4 @@ on charger
 
 on property:persist.vendor.hvdcp_opti.start=2
     rmdir /mnt/vendor/persist/hvdcp_opti
-    setprop persist.vendor.hvdcp_opti.start 0
-
-on property:persist.vendor.hvdcp_opti.start=1
-    mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
-    enable vendor.hvdcp_opti
-    start vendor.hvdcp_opti
     setprop persist.vendor.hvdcp_opti.start 0
